@@ -1,0 +1,17 @@
+version: '3.9'
+
+networks:
+  fubu:
+    external: true
+
+services:
+  json-server:
+    image: l33ter/node_json-server:latest
+    container_name: jsonserver-test
+    restart: always
+    volumes:
+      - ./data:/data
+    ports:
+      - "14145:14145"
+    networks:
+      - fubu
