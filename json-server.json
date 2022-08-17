@@ -1,0 +1,6 @@
+{
+  "port": 14145,
+  "host": "0.0.0.0",
+  "watch": true,
+  "quiet": false
+}
